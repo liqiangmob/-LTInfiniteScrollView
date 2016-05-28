@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/tools"
+    android:id="@+id/main_fl_card_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.lijinyuan.yunchengcalendar.RoundProgressBar
+        android:id="@+id/roundProgressBar"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android_custom:roundColor="#C6E2FF"
+        android_custom:roundProgressColor="#CD3333"
+        android_custom:roundWidth="10dip"
+        android_custom:textIsDisplayable="false" />
+
+
+    <LinearLayout
+        android:id="@+id/it_day_linearLayout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/it_day_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="11%" />
+
+        <TextView
+            android:id="@+id/it_day_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="11%" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+
+        <TextView
+            android:id="@+id/it_day_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="标题" />
+    </LinearLayout>
+
+
+</FrameLayout>
